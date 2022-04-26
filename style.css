@@ -10,6 +10,31 @@ header{
 	display: flex;
 	flex-direction:column;
 	align-items:center;
+	border-bottom: solid 1px grey;
+	position:fixed;
+	width:100%;
+	background-color: white;
+}
+
+.container{
+padding-top:140px;
+}
+
+.container .content{
+
+	font-family: 'Kanit', sans-serif;
+}
+
+.container .content h2{
+	margin-top:20px;
+	margin-bottom: 20px;
+	color:#c74816;
+	text-align: center;
+}
+.container .content .line{
+	text-align:left;
+	padding-left: 10%;
+	margin-bottom: 30px;
 }
 
 .logo{
@@ -63,10 +88,9 @@ header{
 
 .wrapper{
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	color:black;
-	text-align:center;
-	height: 140px;
+	height: 110px;
 }
 
 #check-menu{
@@ -96,22 +120,22 @@ label{
 }
 
 .l1{
-	top:46px;
+	top:16px;
 	right:8%;
 }
 
 .l2, .l3{
-	top:58px;
+	top:28px;
 	right:8%;
 }
 
 .l4{
-	top:70px;
+	top:40px;
 	right:8%;
 }
 
 .main-menu{
-	display:block;
+	display:flex;
 	position: absolute;
 	width: 100%;
 	bottom: 0;
@@ -123,15 +147,35 @@ label{
 	transition: .5s all;
 }
 
-.main-menu a{
-	display:block;
+.main-menu .block {
 	width: 100%;
 	padding: 10px;
+	background-color: #1a1a1a;
+	border-left: 1px solid rgba(255,255,255,.3);
+
+}
+
+.main-menu .block a{
+	display:block;
 	color: white;
 	text-decoration: none;
-	border-top: 1px solid rgba(255,255,255,.3);
-	background-color: #1a1a1a;
+	text-align:center;
 
+}
+
+.main-menu .block ul li a{
+	color: white;
+	text-decoration: none;
+	text-align:left;	
+}
+
+.main-menu .block a:hover{
+	color:#c74816;
+}
+
+
+.main-menu .block ul li a:hover{
+	color:#c74816;
 }
 
 #check-menu:checked ~ .main-menu{
@@ -176,3 +220,4 @@ body {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
+
